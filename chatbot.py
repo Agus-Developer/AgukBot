@@ -1,7 +1,7 @@
 import streamlit as st
 import groq
 
-Modelos = ['Seleccionar un modelo', 'llama3-8b-8192', 'llama3-70b-8192', 'mixtral-8x7b-32768']
+Modelos = ['Seleccionar un modelo', 'llama-3.1-8b-instant', 'llama-3.3-70b-versatile', 'openai/gpt-oss-120b']
 
 def sidebar():
     st.sidebar.title(":green[Menu General]")
@@ -12,12 +12,12 @@ def sidebar():
 
     if m == "Seleccionar un modelo":
         st.markdown("No se ha seleccionado ningun modelo :material/close:")
-    elif m == "llama3-8b-8192":
-        st.markdown("Modelo Seleccionado: :orange[llama3-8b-8192] :material/smart_toy:")
-    elif m == "llama3-70b-8192":
-        st.markdown("Modelo Seleccionado: :green[llama3-70b-8192] :material/smart_toy:")
-    elif m == "mixtral-8x7b-32768":
-        st.markdown("Modelo Seleccionado: :violet[mixtral-8x7b-32768] :material/smart_toy:")
+    elif m == "llama-3.1-8b-instant":
+        st.markdown("Modelo Seleccionado: :orange[llama-3.1-8b-instant] :material/smart_toy:")
+    elif m == "llama-3.3-70b-versatile":
+        st.markdown("Modelo Seleccionado: :green[llama-3.3-70b-versatile] :material/smart_toy:")
+    elif m == "openai/gpt-oss-120b":
+        st.markdown("Modelo Seleccionado: :violet[openai/gpt-oss-120b] :material/smart_toy:")
     st.divider()
     return m
 
